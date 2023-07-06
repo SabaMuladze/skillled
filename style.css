@@ -1,0 +1,243 @@
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      box-sizing: border-box;
+  }
+
+  main,
+  header {
+      padding: 0 10.3rem;
+  }
+
+  body {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(#FFFFFF, #F0F1FF);
+      overflow-x: hidden !important;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+      color: #13183F;
+      font-weight: 800;
+  }
+
+  p {
+      font-weight: 500 !important;
+      color: #83869A !important;
+  }
+
+
+
+  a {
+      text-decoration: none;
+  }
+
+  :root {
+      --Heading-XL: 56px;
+      --Heading-XL-line: 70.56px;
+      --Heading-L: 40px;
+      --Heading-L-line: 51px;
+      --Heading-M: 32px;
+      --Heading-M-line: 40px;
+      --Heading-S: 24px;
+      --Heading-S-line: 28px;
+      --Body-M: 18px;
+      --Body-M-line: 28px;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+      font-size: var(--Body-M);
+      line-height: var(--Body-M-line);
+      color: white;
+      background-color: #13183F;
+      border-radius: 50px;
+      padding: 15px 30px;
+      position: relative;
+      z-index: 10;
+  }
+
+  .button1:hover {
+      background-color: #666CA3;
+  }
+
+  .button2:hover {
+      background: var(--gradient-1-hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+  }
+
+  .button3:hover {
+      background: var(--gradient-2-hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF 0%, #F02AA6 100%));
+  }
+
+
+
+  .button2 {
+      background: linear-gradient(#F02AA6, #FF6F48);
+  }
+
+  .button3 {
+      background: linear-gradient(#4851FF, #F02AA6);
+      ;
+  }
+
+  .logo {
+      color: #13183F;
+      font-size: 36px;
+      line-height: 45.56px;
+      font-weight: 800;
+      margin: auto 0;
+  }
+
+  .logo-white {
+      color: white;
+  }
+
+  header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 10vh;
+
+  }
+
+  .main-heading {
+      font-size: var(--Heading-XL-line);
+      line-height: var(--Heading-XL-line);
+  }
+
+  .heading-m {
+      font-size: var(--Heading-M);
+      line-height: var(--Heading-M-line);
+  }
+
+  .heading-s {
+      font-size: var(--Heading-S);
+      line-height: var(--Heading-S-line);
+  }
+
+  .body-m {
+      font-size: var(--Body-M);
+      line-height: var(--Body-M-line);
+  }
+
+  .article {
+      display: flex;
+      height: 85vh;
+  }
+
+  .art-div-one {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      margin-top: 185px;
+
+  }
+
+
+  .art-div-two {
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* transform: translate(12.5rem, -13.125rem); */
+      transform: translate(25%, -25%);
+      z-index: 5;
+  }
+
+  .cards {
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 80px 30px;
+      margin: auto;
+  }
+
+  .card {
+      padding: 64px 32px 40px 32px;
+      width: 350px;
+      box-shadow: 0px 25px 50px 0px #06168D0B;
+      background: white;
+      border-radius: 1rem;
+
+  }
+
+  .card1 {
+      background: linear-gradient(#FF6F48, #F02AA6);
+
+  }
+
+  .card1-txt {
+      color: white;
+  }
+
+  .card-head {
+      margin-top: -60px;
+      margin-bottom: 24px;
+  }
+
+  .card-p {
+      margin-bottom: 24px;
+  }
+
+  .card-p1 {
+      margin-bottom: 52px;
+  }
+
+
+  .card-txt {
+      display: flex;
+      flex-direction: column;
+      gap: 24px 0px 24px 0px;
+      margin-top: -50px;
+
+  }
+
+  footer {
+      padding: 2.875rem 10.3rem;
+      display: flex;
+      justify-content: space-between;
+      background-color: #13183F;
+      margin-top: 140px;
+  }
+
+  .svg {
+      transform: translateY(-5.7rem);
+  }
+
+  .link-pink {
+      color: #F02AA6;
+      font-weight: 700;
+  }
+
+
+
+  .link-pink:hover {
+      opacity: 0.7;
+  }
+
+  .hero-mobile,
+  .hero-tablet {
+      display: none;
+  }
+
+  .card-cont {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+  }

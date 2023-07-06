@@ -1,0 +1,161 @@
+@import url('style.css');
+
+@media (max-width:992px) {
+
+    /* body {
+        overflow: hidden;
+    } */
+
+    main,
+    header {
+        padding: 0 3rem;
+        /* overflow-x: hidden !important; */
+    }
+
+    .main-heading {
+        font-size: var(--Heading-L);
+        line-height: var(--Heading-L-line);
+    }
+
+    .hero-desktop,
+    .hero-mobile {
+        display: none;
+    }
+
+
+    .cards {
+        /* display: flex;
+            flex-wrap: wrap;
+            gap: 80px 40px;
+            justify-content: center;
+            margin-bottom: 8.75rem; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 56px 10px;
+        margin: auto;
+    }
+
+    .card {
+        /* width: 350px; */
+        width: 100%;
+        padding: 56px 21px 32px 32px;
+
+    }
+
+    .card1-txt {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .card-head {
+        margin-top: -75px;
+        margin-bottom: 16px;
+    }
+
+
+    footer {
+        padding: 2.6rem 3rem;
+    }
+
+    .article {
+        height: 50vh;
+    }
+
+    .hero-tablet {
+        display: block;
+    }
+
+    .art-div-two {
+        transform: translate(1.5rem, -12rem);
+
+    }
+
+    .art-div-one {
+        margin-top: 100px;
+    }
+
+
+    .logo {
+        font-size: 28px;
+        line-height: 35.28px;
+
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:578px) {
+    .card {
+        width: 100%;
+    }
+
+    .card1 {
+        padding: 24px 29px 32px 28px;
+
+    }
+
+    .card1-txt {
+        margin-bottom: 32px;
+    }
+
+    .hero-mobile {
+        display: block;
+        transform: translate();
+    }
+
+    .hero-desktop,
+    .hero-tablet {
+        display: none;
+    }
+
+    .article {
+        flex-direction: column;
+        height: 90vh;
+        margin-bottom: 5vh;
+    }
+
+    .art-div-one {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .art-div-two {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0);
+    }
+
+    footer,
+    main,
+    header {
+        padding: 1.1rem 1rem;
+    }
+
+    .cards {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 0.5fr repeat(5, 1fr);
+
+        gap: 40px 0px;
+        margin: auto;
+    }
+
+    .card-p1 {
+        margin-bottom: 24px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+}
