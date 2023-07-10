@@ -20,6 +20,11 @@
       flex-direction: column;
       background: linear-gradient(#FFFFFF, #F0F1FF);
       overflow-x: hidden !important;
+      background-image: url(assets/image-hero-desktop.png);
+      background-repeat: no-repeat;
+      background-position: right -330px top -150px;
+      background-size: 900px 800px;
+
   }
 
 
@@ -30,6 +35,10 @@
   h5 {
       color: #13183F;
       font-weight: 800;
+  }
+
+  .hero-mobile {
+      display: none;
   }
 
   p {
@@ -135,35 +144,34 @@
 
   .article {
       display: flex;
-      height: 85vh;
+      width: 100%;
+      margin-bottom: 150px;
+
   }
 
   .art-div-one {
-      width: 50%;
       display: flex;
       flex-direction: column;
       gap: 35px;
       margin-top: 185px;
+      flex-basis: 50%;
 
   }
 
-
   .art-div-two {
-      width: 50%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* transform: translate(12.5rem, -13.125rem); */
-      transform: translate(25%, -25%);
-      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
   .cards {
-      width: 70%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 351px);
+      grid-template-rows: repeat(2, 314px);
       gap: 80px 30px;
-      margin: auto;
+      justify-content: center;
+
   }
 
   .card {
@@ -229,15 +237,14 @@
       opacity: 0.7;
   }
 
-  .hero-mobile,
-  .hero-tablet {
-      display: none;
-  }
-
   .card-cont {
       width: 100%;
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
+  }
+
+  .hero-mobile {
+      display: none;
   }
