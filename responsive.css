@@ -144,6 +144,7 @@
     .hero-mobile {
         display: block;
         background-repeat: no-repeat;
+        width: 375px;
     }
 
     footer,
@@ -168,5 +169,6 @@
 
     footer {
         margin-top: 80px;
+        width: 100%;
     }
 }
