@@ -145,6 +145,8 @@
         display: block;
         background-repeat: no-repeat;
         width: 375px;
+        padding: 1%;
+        width: 95%;
     }
 
     footer,
